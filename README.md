@@ -5,9 +5,10 @@
 ### 구성
 
 1. JVM 이란?
-2. JAVA Deep Dive
-3. Kotlin Deep Dive
-4. Spring
+2. [Garbage Collection](/GarbageCollection/README.md)
+3. JAVA Deep Dive
+4. Kotlin Deep Dive
+5. Spring
 
 ### LICENSE
 
