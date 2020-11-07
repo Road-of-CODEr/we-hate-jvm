@@ -1,5 +1,5 @@
 # Java Memory Garbage Collection
- 자바 개발자라면 꼭 알고 넘어가야 하는 기본 아닌 기본 소양 :memo:
+ 자바 개발자라면 꼭 알고 넘어가야 하는 기본 아닌 기본 소양 📝
 ## 목차
 - [Java Memory Garbage Collection](#java-memory-garbage-collection)
   - [목차](#목차)
@@ -36,7 +36,7 @@
   > 특정 회수 이상 참조되어 Old 영역으로 가기 위한 Age를 달성하였을 때 이동하게 된다.
 * Perm: Class / Method 의 Meta 정보, static 변수 / 상수들이 저장되는 곳
 
-우리가 아는(흔히 인터넷에 널려있는) Garbage Collection :do_not_litter: 도  
+우리가 아는(흔히 인터넷에 널려있는) Garbage Collection 🚯 도  
 위와 같은 가정을 두고 언급한 것들이 정말 많습니다  
 <br>
 *하지만 지금도 정말 그럴까요?* 
@@ -94,7 +94,7 @@ Heap 영역은 크게 2가지로 구성이 되어 있는데요,
 * G1(Garbage First) GC
 
 `G1GC` 는 설명이 따로 없는데요  
-사실 오늘은 가장 많이 쓰이고 있는 `G1GC` 와 앞으로 개발될 `새로운 GC` 를 언급하기 위해서 여기까지 왔습니다 :smile:   
+사실 오늘은 가장 많이 쓰이고 있는 `G1GC` 와 앞으로 개발될 `새로운 GC` 를 언급하기 위해서 여기까지 왔습니다 😄 
 
 ## G1GC
 G1GC는 매커니즘이 많이 다릅니다  
@@ -136,7 +136,7 @@ Region은 기본적으로 ( 전체 Heap 메모리 ) / 2048 로 default 값이 �
 7. 살아있는 객체가 아주 적은 Old 영역에 대해 [GC pause(mixed)] 를 로그로 표시하고, Young GC가 이루어질 때 수집되도록 한다
 
 ### 튜닝 포인트
-흠 :thinking: 동작원리는 알았는데, 도대체 뭘 바꿔야 하죠?  
+흠 🤔 동작원리는 알았는데, 도대체 뭘 바꿔야 하죠?  
 우선은 무엇인가를 바꾸기 전에 항상  
 **성능테스트** + **로그 옵션** 을 켜야 합니다  
 `-Xlog:gc*:gc.log` 옵션으로 로그를 활성화해서 파일로 옮기는 것도 하면 좋겠네요.!  
@@ -156,7 +156,7 @@ Region은 기본적으로 ( 전체 Heap 메모리 ) / 2048 로 default 값이 �
 더 놀라운 것은 앞으로 나올 GC 가 **JDK** 의 버젼업과 함께 준비중에 있다는 사실입니다
 
 ## New Feature(...)
-그래서 현재 지금 계속 개발되고 있는 GC 알고리즘이 무엇이냐면 :question:  
+그래서 현재 지금 계속 개발되고 있는 GC 알고리즘이 무엇이냐면 ❓  
 바로 ZGC 입니다  
 ### ZGC
 `ZGC` 는 **JDK 15버젼에서 바로 Production Ready** 상태인데요,    
@@ -229,7 +229,7 @@ But this pauses are usually quite short - only a few milliseconds.
 
 ## 마치면서
 하드웨어도 시간에 따라 점점 발전하고, SW 도 마찬가지입니다  
-계속 관심 :pencil: 을 갖고 살펴보는 것은 중요한 것 같네요! 
+계속 관심 📝 을 갖고 살펴보는 것은 중요한 것 같네요! 
 
 ## 참고
 * [JVM에 대해 알아보자](https://iann.tistory.com/17)
