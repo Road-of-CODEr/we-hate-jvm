@@ -7,6 +7,7 @@
 1. JVM 이란?
 2. [Garbage Collection](/GarbageCollection/README.md)
 3. JAVA Deep Dive
+    * [Generic](/Generic/README.md)
 4. Kotlin Deep Dive
 5. Spring
 
