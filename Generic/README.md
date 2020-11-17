@@ -96,7 +96,7 @@ public void addAll(Collection<? extends E> c) { ... }
 ```
 위 메소드는 다른 컬렉션에 들어있는 모든 element를 추가할 수 있습니다. (element 타입이 E 또는 E의 서브 타입이어야 합니다.)
 
-## 예시 3
+### 예시 3
 ```java
 public static <T extends Comparable<? super T>> void sort(List<T> list) { ... }
 ```
