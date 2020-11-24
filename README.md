@@ -10,6 +10,7 @@
     * [Generic](/Generic/README.md)
 4. Kotlin Deep Dive
 5. Spring
+    * [Sleuth](/Sleuth/README.md)
 
 ### LICENSE
 
