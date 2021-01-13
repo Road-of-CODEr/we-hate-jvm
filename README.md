@@ -1,17 +1,28 @@
 # WE HATE JVM
 
-너무 싫어 너무 좋아 너무 싫어 너무 좋아 너무 싫어 **너무 좋아**
+### README - https://github.com/Road-of-CODEr/we-hate-jvm/wiki
 
-### 구성
+---
 
-1. JVM 이란?
-2. [Garbage Collection](/GarbageCollection/README.md)
-3. JAVA Deep Dive
-    * [Generic](/Generic/README.md)
-4. Kotlin Deep Dive
-5. Spring
-    * [Sleuth](/Sleuth/README.md)
+### JVM
+* [Garbage Collection](/GarbageCollection/README.md)
 
-### LICENSE
+### Java
+* **Java Basic**
+  * TBD
+* **Java Deep Dive**
+  * [Generic](/Generic/README.md)
+   
+---
 
-This is released under the MIT license. See [LICENSE](LICENSE) for details.
+### Kotlin
+* **Kotlin Basic**
+  * TBD
+* **Kotlin Deep Dive**
+  * TBD
+  
+---
+
+### Spring
+* **Spring Cloud**
+  * [Sleuth](/Sleuth/README.md)
