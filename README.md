@@ -17,7 +17,7 @@
 
 ### Kotlin
 * **Kotlin Basic**
-  * TBD
+  * [Type System](Kotlin/TypeSystem/README.md)
 * **Kotlin Deep Dive**
   * TBD
   
