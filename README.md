@@ -26,4 +26,5 @@
 ### Spring
 * **Spring Cloud**
   * [MSA?](Spring/Cloud/1.Cloud%20&%20MSA.md)
+  * [Zuul](Spring/Cloud/6.Zuul.md)
   * [Sleuth](/Sleuth/README.md)
