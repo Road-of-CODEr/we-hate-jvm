@@ -138,6 +138,28 @@ fun main() {
 
 요렇게 되는 것이에요!  
 
+`as` 키워드가 똑똑하게 바꾸는 걸 의미한다면,  
+`is` 키워드는 `instanceOf` 와 유사합니다  
+
+다만 판별이 들어가고 나서는 알아서 캐스팅되는 방식이죠 ㅎㅎ  
+
+```kotlin
+fun casting(value: Any) {
+    when (value) {
+        is String -> println("hi, $value")
+        is Int -> println("hi, ${value * 2}")
+        else -> return
+    }
+}
+
+fun main() {
+    casting("myName") // hi, myName 
+    casting(2) // hi, 4
+}
+```
+
+요렇게 안전하고 똑똑하게 캐스팅할 수 있습니다!
+
 ## lazy loading
 
 때로는 지연 로딩(객체를 사용할 때 생성) 하고 싶은 경우가 있는데요  
