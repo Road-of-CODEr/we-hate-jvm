@@ -30,4 +30,5 @@
   * [Ribbon](Spring/Cloud/3.Ribbon.md)
   * [Eureka](Spring/Cloud/4.Eureka.md)
   * [Feign](Spring/Cloud/5.Feign.md)
+  * [Zuul](Spring/Cloud/6.Zuul.md)
   * [Sleuth](/Sleuth/README.md)
