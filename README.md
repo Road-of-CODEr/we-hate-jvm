@@ -17,7 +17,7 @@
 
 ### Kotlin
 * **Kotlin Basic**
-  * TBD
+  * [Type System](Kotlin/TypeSystem/README.md)
 * **Kotlin Deep Dive**
   * TBD
   
@@ -26,5 +26,7 @@
 ### Spring
 * **Spring Cloud**
   * [MSA?](Spring/Cloud/1.Cloud%20&%20MSA.md)
+  * [Hystrix](Spring/Cloud/2.Hystrix.md)
+  * [Ribbon](Spring/Cloud/3.Ribbon.md)
   * [Eureka](Spring/Cloud/4.Eureka.md)
   * [Sleuth](/Sleuth/README.md)
