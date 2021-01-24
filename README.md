@@ -29,4 +29,5 @@
   * [Hystrix](Spring/Cloud/2.Hystrix.md)
   * [Ribbon](Spring/Cloud/3.Ribbon.md)
   * [Eureka](Spring/Cloud/4.Eureka.md)
+  * [Feign](Spring/Cloud/5.Feign.md)
   * [Sleuth](/Sleuth/README.md)
