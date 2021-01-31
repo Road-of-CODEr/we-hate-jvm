@@ -23,6 +23,11 @@
   
 ---
 
+### JPA
+* [JPA 빠르게 한번 훑어보기](JPA/1.Quickly_Intro.md)
+
+---
+
 ### Spring
 * **Spring Cloud**
   * [MSA?](Spring/Cloud/1.Cloud%20&%20MSA.md)
