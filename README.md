@@ -18,6 +18,7 @@
 ### Kotlin
 * **Kotlin Basic**
   * [Type System](Kotlin/TypeSystem/README.md)
+  * [High Function](Kotlin/HighFunction/README.md)
 * **Kotlin Deep Dive**
   * TBD
   
