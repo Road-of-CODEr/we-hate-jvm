@@ -215,7 +215,7 @@ fun main() {
 ```kotlin
 fun main() {
     listOf("alice", "bob")
-        .forEach label@{ // 람다에 lable을 붙일 수 있다
+        .forEach label@{ // 람다에 label을 붙일 수 있다
             if (it == "alice") {
                 println("Found!")
                 return@label // 해당 람다함수를 리턴
