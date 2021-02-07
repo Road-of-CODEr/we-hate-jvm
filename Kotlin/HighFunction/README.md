@@ -124,7 +124,7 @@ caculator의 객체 타입은 바로 `(Order) -> Double` 이라는 함수 타입
 한번 예시를 통해 어떻게 중복을 제거하면서 고차 함수로 멋있게 코딩할 수 있을까?
 
 ```kotlin
-data class SiteVisit( // allArgs, get, equals, hashCode 오버라이딩 한 클래스
+data class SiteVisit( // allArgs, get, equals, hashCode, toString 오버라이딩 한 클래스
     val path: String,
     val duration: Double,
     val os: OS,
