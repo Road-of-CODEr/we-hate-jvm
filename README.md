@@ -25,6 +25,7 @@
 
 ### JPA
 * [JPA 빠르게 한번 훑어보기](JPA/1.Quickly_Intro.md)
+* [JPA에서 @Transactinoal에 대한 궁금증](JPA/Transactional_Annotation.md)
 
 ---
 
