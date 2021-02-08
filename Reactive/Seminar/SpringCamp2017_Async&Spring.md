@@ -75,7 +75,7 @@ get()은 결과를 동기로 가져옴.(리천 시간과 결과를 가져오는 
 
 ### 비동기 실행 @Async
 
-```
+```java
 @Async
 void service(){
     ...//(B)
@@ -88,7 +88,7 @@ myService.service()
 
 (B)와 (C)는 각각 다른 쓰레드에서 실행
 
-```
+```java
 @Async
 String service(){
     ...
@@ -111,7 +111,7 @@ String result=myService.service()
 
 <br>
 
-```
+```java
 @Async
 Future<String> service(){
     ...
@@ -125,7 +125,7 @@ get으로 블로킹하여 전달 받음
 
 <br>
 
-```
+```java
 @Async
 ListenableFuture<String> service(){
     ...
@@ -141,7 +141,7 @@ r->log.info("Success:{}",r), e->log.info("Error: {}", e)};
 
 <br>
 
-```
+```java
 @Async
 CompletableFuture<String> service(){
     ...
@@ -174,7 +174,7 @@ Executor, ExecutorService, TaskExecutor 중 하나를 빈에 등록시키면 @As
 
 <br>
 
-```
+```java
 @Bean
 TaskExecutor taskExecutor(){
     ThreadPoolTaskExecutor te = new ThreadPoolTaskExecutor();
@@ -218,11 +218,13 @@ Servlet의 비동기 요청 처리 기반의 @MVC
 
 사실 두가지 더있으나 어려워서 뺌
 
+<br>
+
 #### Callable<T>
 
 AsyncTaskExecutor에서 실행될 코드를 리턴
 
-```
+```java
 @FunctionalInterface
 public interface Callable<V>{
     V call() throws execption;
@@ -237,6 +239,7 @@ Callable<String> callable(){
 //Callable의 리턴 값이 컨트롤러 메소드의 리턴 값으로 사용
 ```
 
+<br>
 
 #### WebAsyncTask<T>
 
@@ -245,6 +248,8 @@ Callable에 없는 시간, 쓰레드 풀을 명시적으로 지정 할 수 있�
 public WebAsyncTask(Long timeout, String executorName, Callable<V> callable){...}
 public WebAsyncTask(Long timeout, AsyncTaskExecutor executor, Callable<V> callable){...}
 ```
+
+<br>
 
 #### DeferredResult<T>
 
@@ -255,7 +260,7 @@ public WebAsyncTask(Long timeout, AsyncTaskExecutor executor, Callable<V> callab
 스프링은 MVC 코드를 바로 리턴 했으니 서블릿 쓰레드를 리턴함(가용 쓰레드 증가)
 어디선가 DeferredResult는에 결과 값을 쓰면 원래 스프링 MVC의 리턴값이 었던것처럼 됨.
 
-```
+```java
 @GetMapping("/deferredresult")
     DeferredResult dr = new DeferredResult();
     queue.add(dr); // 1. DeferredResult 생성 보관한 뒤 바로 리턴(쓰레드 반납), but 응답은 지연
@@ -270,7 +275,7 @@ ex) 100명 정도가 들어와서 어떤 이벤트가 들어오면 응답을 줘
 
 <br>
 
-```
+```java
 @GetMapping("/drlf")
 DeferredResult<String> drAndLf(){
     DeferredResult dr = new DeferredResult();
@@ -284,7 +289,7 @@ DeferredResult와 @Async
 - @Async메소드가 리턴하는 ListenableFuture에서 DeferredResult 사용
 - 비동기 @MVC + 비동기 메소드 실행
 
-```aidl
+```java
 // 위의 코드와 동일한 작동
 @GetMapping("/lf")
 ListenableFuture<String> listenableFutre(){
@@ -297,7 +302,7 @@ ListenableFuture<String> listenableFutre(){
 
 ListenableFuture<T>의 한계
 - 두가지 이상의 비동기 작업을 순차적으로 혹은 동시에 수행하고 결과를 조합해서 @MVC의 리턴 값으로 넘기려면?
-```aidl
+```java
 @GetMapping("/")
 String listenableFutre(){
     String res1 = myService.async()
@@ -331,6 +336,7 @@ ListenableFuture<T> 조합
 - 최종 비동기 작업의 성공 콜백에서 DeferredResult에 결과 전달
 
 -> 콜백의 중첩으로 코드가 복잡해짐, 예외 콜백의 내용이 동일한 경우 중복이 발생. 
+
 -> 콜백헬! 
 
 그래서 등장한 것이 자바8의 CompletableFuture<T> 조합
@@ -375,6 +381,8 @@ CompletableFuture<String> cfCompose(){
 - 호출 작업 동안 쓰레드 점유
 - 블로킹으로 인한 컨텍스트 스위칭 발생 (한번 블로킹마다 2번)
 
+<br>
+
 #### 문제
 만약 100번의 요청을 비동기로 요청시 순간적으로 쓰레드 100개를 사용함.
 
@@ -383,6 +391,8 @@ AsyncRestTemplate
 - 이럴바에는 @Async에 RestTemplate쓰고 말지! 
 
 -> 논블러킹 IO를 지원하는 리퀘스트 팩토리를 사용해야함. ex) Netty
+
+<br>
 
 #### 비동기 API 호출의 조합과 결합은 어떻게?
 
