@@ -133,6 +133,8 @@ public @interface DataJpaTest {
 
 그래서 프로덕션 코드(Service 레이어)에서 `@Transactional`이 없어도 테스트코드는 통과하는 일이 일어납니다.
 
+`Post` 엔티티는 `List<Comment>`를 가지고 있으며 양방향이고 fetchType은 Lazy입니다. 전형적인 일대다 관계예요!
+
 ```java
 @Service
 @RequiredArgsConstructor
