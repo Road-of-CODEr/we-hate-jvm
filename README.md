@@ -1,6 +1,7 @@
 # WE HATE JVM
 
 ### README - https://github.com/Road-of-CODEr/we-hate-jvm/wiki
+### [WEDONE](done/WEDONE.md)
 
 ---
 
