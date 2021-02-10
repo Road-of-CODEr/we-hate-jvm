@@ -39,3 +39,7 @@
   * [Feign](Spring/Cloud/5.Feign.md)
   * [Zuul](Spring/Cloud/6.Zuul.md)
   * [Sleuth](/Spring/Cloud/7.Sleuth.md)
+  
+* **Java와 Kotlin 코드 비교**
+  * [Entity](Spring/Java-Kotlin/1.Entity.md)
+  * [Repository](Spring/Java-Kotlin/2.Repository.md)
