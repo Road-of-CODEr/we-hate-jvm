@@ -1,4 +1,4 @@
-g스프링캠프 2017[Day1 A3]: Spring WebFlux 발표 영상을 사실상 받아쓰기 함.
+스프링캠프 2017[Day1 A3]: Spring WebFlux 발표 영상을 사실상 받아쓰기 함.
 
 [Spring 5.0 WebFlux 소개와 개발 방법](https://www.youtube.com/watch?v=2E_1yb8iLKk)
 
