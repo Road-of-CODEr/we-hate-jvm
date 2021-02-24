@@ -46,3 +46,4 @@
   * [Repository](Spring/Java-Kotlin/2.Repository.md)
   * [Service](Spring/Java-Kotlin/3.Service.md)
   * [Controller](Spring/Java-Kotlin/4.Controller.md)
+  * [Enum](Spring/Java-Kotlin/5.Enum.md)
