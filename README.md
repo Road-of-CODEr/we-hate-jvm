@@ -22,7 +22,7 @@
   * [Type System](Kotlin/TypeSystem/README.md)
   * [High Function](Kotlin/HighFunction/README.md)
 * **Kotlin Deep Dive**
-  * TBD
+  * [Generic](Kotlin/Generic/README.md)]
   
 ---
 
@@ -46,8 +46,7 @@
   * [Repository](Spring/Java-Kotlin/2.Repository.md)
   * [Service](Spring/Java-Kotlin/3.Service.md)
   * [Controller](Spring/Java-Kotlin/4.Controller.md)
-
----
+  * [Enum](Spring/Java-Kotlin/5.Enum.md)
 
 ### Reactive
 * **세미나 정리**
