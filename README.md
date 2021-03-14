@@ -44,7 +44,7 @@
   * [Sleuth](/Spring/Cloud/7.Sleuth.md)
   
 * **Spring Data Redis**
-  * [API Lock](#)
+  * [API Lock](Spring/Data/Redis-API-Lock.md)
   
 * **Java와 Kotlin 코드 비교**
   * [Entity](Spring/Java-Kotlin/1.Entity.md)
