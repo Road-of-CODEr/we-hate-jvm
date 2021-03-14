@@ -23,7 +23,7 @@
   * [High Function](Kotlin/HighFunction/README.md)
   * [Annotation](Kotlin/Annotation/README.md)
 * **Kotlin Deep Dive**
-  * [Generic](Kotlin/Generic/README.md)]
+  * [Generic](Kotlin/Generic/README.md)
   
 ---
 
@@ -42,6 +42,9 @@
   * [Feign](Spring/Cloud/5.Feign.md)
   * [Zuul](Spring/Cloud/6.Zuul.md)
   * [Sleuth](/Spring/Cloud/7.Sleuth.md)
+  
+* **Spring Data Redis**
+  * [API Lock](#)
   
 * **Java와 Kotlin 코드 비교**
   * [Entity](Spring/Java-Kotlin/1.Entity.md)
