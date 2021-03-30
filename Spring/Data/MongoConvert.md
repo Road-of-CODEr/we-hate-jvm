@@ -3,7 +3,7 @@ MongoDB에 어떤 객체를 넣어야 되는데, 이때 그 객체의 특정 fie
 그리고 원래 format 그대로 저장 및 조회가 가능해야한다.
 
 ## 삽질을 하게된 계기
-JPA는 AttributeConverter라는 녀석이 있어서 매우 간단하고 변환이 가능하다! 하지만 Mongo는 JPA가 아니기 때문에 이걸 사용할 수 없음
+JPA는 AttributeConverter라는 녀석이 있어서 매우 간단하고 변환이 가능하다! 하지만 Mongo는 JPA를 사용하지 않기때문에 이걸 사용할 수 없음
 * 아래와 같이하면 자동으로 됨
 ```kotlin
 import javax.persistence.AttributeConverter
