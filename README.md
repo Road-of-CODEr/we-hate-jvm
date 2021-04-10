@@ -41,7 +41,8 @@
   * [Hystrix](Spring/Cloud/2.Hystrix.md)
   * [Ribbon](Spring/Cloud/3.Ribbon.md)
   * [Eureka](Spring/Cloud/4.Eureka.md)
-  * [Feign](Spring/Cloud/5.Feign.md)
+  * [Feign](Spring/Cloud/Feign/Feign.md)
+    * [FeignTesting](Spring/Cloud/Feign/FeignWithTest.md)
   * [Zuul](Spring/Cloud/6.Zuul.md)
   * [Sleuth](/Spring/Cloud/7.Sleuth.md)
   
