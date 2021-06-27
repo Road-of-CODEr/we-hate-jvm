@@ -390,3 +390,9 @@ logging.level:
 어떤식으로 설정해야 되는지에 대한 전체적인 설명이었습니다.  
 <br>
 피드백이나 의견은 언제나 환영이에요.!!
+
+### 참고 자료들
+
+* [Spring Batch Paging Reader 사용시 주의사항](https://jojoldu.tistory.com/166)
+* [Spring Batch 간단 정리](https://cheese10yun.github.io/spring-batch-basic/)
+* [Spring Batch: Which ItemReader implementation to use for high volume & low latency](https://stackoverflow.com/questions/20386642/spring-batch-which-itemreader-implementation-to-use-for-high-volume-low-laten)
