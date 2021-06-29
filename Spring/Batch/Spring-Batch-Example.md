@@ -54,7 +54,7 @@ class Member(
     val age: Long,
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "dormant")
+    @Column(name = "status")
     var status: MemberStatus = MemberStatus.ACTIVE,
 
     @ManyToOne
@@ -202,7 +202,7 @@ fun dormantMemberWriter() = JpaItemWriterBuilder<Member>()
         .build()
 ```
 
-wrtier 도 간단하죠? ㅎㅎ  
+writer 도 간단하죠? ㅎㅎ  
 
 이제 세상에서 제일 어려운 테스트 코드를 작성하러 가볼까요?  
 
